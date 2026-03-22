@@ -104,8 +104,19 @@ export default function Header() {
               </a>
             ))}
             <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="mt-2 flex items-center justify-center gap-2 text-white px-5 py-3 rounded-lg font-semibold"
+              style={{ background: "linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4)" }}
+            >
+              <Instagram className="w-5 h-5" />
+              Follow on Instagram
+            </a>
+            <a
               href="tel:8790588644"
-              className="mt-2 flex items-center justify-center gap-2 bg-accent text-accent-foreground px-5 py-3 rounded-lg font-semibold"
+              className="flex items-center justify-center gap-2 bg-accent text-accent-foreground px-5 py-3 rounded-lg font-semibold"
             >
               <Phone className="w-4 h-4" />
               Call: 8790588644
