@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Instagram } from "lucide-react";
+
+const INSTAGRAM_URL = "https://www.instagram.com/subham_enterprises_mtm?igsh=bzE4d3c5M2Y0NGZh";
 
 const navLinks = [
   { label: "Home", href: "#home" },

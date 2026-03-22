@@ -1,5 +1,7 @@
 import logo from "@/assets/logo.png";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Instagram } from "lucide-react";
+
+const INSTAGRAM_URL = "https://www.instagram.com/subham_enterprises_mtm?igsh=bzE4d3c5M2Y0NGZh";
 
 export default function Footer() {
   return (
