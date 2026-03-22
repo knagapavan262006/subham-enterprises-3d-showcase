@@ -1,5 +1,7 @@
 import logo from "@/assets/logo.png";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Instagram } from "lucide-react";
+
+const INSTAGRAM_URL = "https://www.instagram.com/subham_enterprises_mtm?igsh=bzE4d3c5M2Y0NGZh";
 
 export default function Footer() {
   return (
@@ -25,6 +27,20 @@ export default function Footer() {
             <span className="flex items-center gap-2">
               <MapPin className="w-4 h-4" /> India
             </span>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:scale-110 transition-all duration-200 hover:drop-shadow-[0_0_8px_rgba(225,48,108,0.6)]"
+            >
+              <span
+                className="flex items-center justify-center w-8 h-8 rounded-full shadow-md"
+                style={{ background: "linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4)" }}
+              >
+                <Instagram className="w-4 h-4 text-white" />
+              </span>
+              <span className="text-primary-foreground/70 text-sm">Follow us on Instagram</span>
+            </a>
           </div>
         </div>
 

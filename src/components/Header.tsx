@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Instagram } from "lucide-react";
+
+const INSTAGRAM_URL = "https://www.instagram.com/subham_enterprises_mtm?igsh=bzE4d3c5M2Y0NGZh";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -59,8 +61,18 @@ export default function Header() {
             </a>
           ))}
           <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2 flex items-center justify-center w-10 h-10 rounded-full shadow-md transition-all duration-200 hover:scale-110 hover:shadow-[0_0_16px_rgba(225,48,108,0.5)] active:scale-95"
+            style={{ background: "linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4)" }}
+            aria-label="Follow us on Instagram"
+          >
+            <Instagram className="w-5 h-5 text-white" />
+          </a>
+          <a
             href="tel:8790588644"
-            className="ml-4 flex items-center gap-2 bg-accent text-accent-foreground px-5 py-2.5 rounded-lg font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
+            className="ml-2 flex items-center gap-2 bg-accent text-accent-foreground px-5 py-2.5 rounded-lg font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
           >
             <Phone className="w-4 h-4" />
             Call Now
@@ -92,8 +104,19 @@ export default function Header() {
               </a>
             ))}
             <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="mt-2 flex items-center justify-center gap-2 text-white px-5 py-3 rounded-lg font-semibold"
+              style={{ background: "linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4)" }}
+            >
+              <Instagram className="w-5 h-5" />
+              Follow on Instagram
+            </a>
+            <a
               href="tel:8790588644"
-              className="mt-2 flex items-center justify-center gap-2 bg-accent text-accent-foreground px-5 py-3 rounded-lg font-semibold"
+              className="flex items-center justify-center gap-2 bg-accent text-accent-foreground px-5 py-3 rounded-lg font-semibold"
             >
               <Phone className="w-4 h-4" />
               Call: 8790588644
